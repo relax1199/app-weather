@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>App</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../script/jquery.min.js"></script>
+	<script src="../script/main.js"></script>
+
+</head>
+<body>
+<div class="app">
+	<header class="head">
+		<h1>weather app</h1>
+	</header>
+	<div id="Container_1" class="container">
+		<div class="wrapper">		
+			<div class="item">
+				<p>Дата : </p>
+			</div>
+			<div class="item">
+				<input id="date" type="date">
+			</div>
+			<div class="item">
+				<p>Город : </p>
+			</div>
+			<div class="item">
+				<input id="city" type="text">
+			</div>
+			<div class="item">
+				<button id="send" class="btn">
+					отправить
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="Container_2" class="container">
+		<div class="left">
+			<div id="map"></div>
+			<div class="days"></div>
+		</div>
+		<div class="right">
+			
+		</div>
+	</div>
+</div>
+<div class="weather template">
+	<div class="time"></div>
+	<div class="weather_it"></div>
+	<div class="images"></div>
+	<div class="temp"></div>
+</div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrPJnhY7A3GYc7QEdAofWv8EnKNy9aLDM&callback=initMap"async defer>
+    </script>
+</body>
+</html>
